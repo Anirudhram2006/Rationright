@@ -1,1 +1,39 @@
-<widget id='com.example.rationright'></widget>
+<?xml version="1.0" encoding="UTF-8"?>
+<widget id="com.anirudhram2006.rationright" version="1.0.0"
+    xmlns="http://www.w3.org/ns/widgets"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+    <name>RationRight</name>
+    <description>
+        RationRight - Smart ration card and food distribution app by Anirudh Ram.
+    </description>
+    <author email="anirudhram2006@gmail.com" href="https://github.com/Anirudhram2006">
+        Anirudh Ram
+    </author>
+
+    <!-- App preferences -->
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="FadeSplashScreenDuration" value="500" />
+    <preference name="Fullscreen" value="true" />
+
+    <!-- Access permissions -->
+    <access origin="*" />
+
+    <!-- Allow navigation to any URL -->
+    <allow-navigation href="*" />
+
+    <!-- Icons (match your assets folder) -->
+    <icon src="assets/icon-192.png" density="mdpi" />
+    <icon src="assets/icon-512.png" density="xxxhdpi" />
+
+    <!-- Splash screen -->
+    <splash src="assets/splash.png" />
+
+    <!-- Platforms -->
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+
+</widget>
