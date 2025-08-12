@@ -1,1 +1,75 @@
-<!doctype html><html><head><meta charset='utf-8'><title>RationRight</title></head><body><h1>RationRight Prototype</h1></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RationRight — Prototype</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>RationRight</h1>
+      <small>Smart & Inclusive Ration Delivery — Prototype</small>
+    </header>
+
+    <main id="main">
+      <!-- Login Screen -->
+      <section id="screen-login" class="screen active">
+        <img src="assets/fingerprint.png" class="fingerprint" alt="Fingerprint icon">
+        <h2>Scan Fingerprint</h2>
+        <p class="muted">(Simulated biometric login for demo)</p>
+        <button id="btnScan" class="primary">Scan Fingerprint</button>
+      </section>
+
+      <!-- Delivery Details -->
+      <section id="screen-delivery" class="screen">
+        <h2>Delivery Details</h2>
+        <div class="card">
+          <div class="row">
+            <div class="col">
+              <p><strong>Beneficiary:</strong> Mr. Kumar</p>
+              <p><strong>Item:</strong> Rice</p>
+              <p><strong>Quantity:</strong> 5 kg</p>
+            </div>
+            <div class="col">
+              <img id="grainImage" src="assets/grains1.jpg" alt="Grain preview">
+            </div>
+          </div>
+          <p id="deliveryNote" class="muted">Image preview provided by delivery agent.</p>
+          <div class="controls">
+            <button id="btnPlay" class="secondary">Play Details (Voice)</button>
+            <button id="btnNext" class="primary">Go to Accept/Reject</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Accept / Reject -->
+      <section id="screen-action" class="screen">
+        <h2>Accept / Reject Delivery</h2>
+        <div class="card">
+          <p><strong>Delivery:</strong> Rice — 5 kg to Mr. Kumar</p>
+          <div class="big-buttons">
+            <button id="btnAccept" class="accept">Accept Delivery</button>
+            <button id="btnReject" class="reject">Reject Delivery</button>
+          </div>
+          <p id="status" class="status muted">No action taken yet.</p>
+          <div class="sync-row">
+            <button id="btnSync" class="primary">Sync Data</button>
+            <button id="btnView" class="secondary">View Offline Queue</button>
+          </div>
+          <div id="queueList" class="queue hidden"></div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <small>Prototype — works offline via localStorage. Use on mobile for best experience.</small>
+      </footer>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
