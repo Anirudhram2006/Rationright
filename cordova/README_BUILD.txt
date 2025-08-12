@@ -1,0 +1,1 @@
+Cordova build instructions placeholder.
