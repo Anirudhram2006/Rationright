@@ -1,0 +1,133 @@
+
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* App Container */
+.app {
+  max-width: 480px;
+  width: 100%;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Screens */
+.screen {
+  display: none;
+}
+
+.screen.active {
+  display: block;
+}
+
+/* Cards */
+.card {
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+}
+
+/* Rows & Columns */
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.col {
+  flex: 1;
+}
+
+.col img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button.primary {
+  background: #2e7d32;
+  color: white;
+}
+
+button.secondary {
+  background: #1976d2;
+  color: white;
+}
+
+button.accept {
+  background: #4caf50;
+  color: white;
+}
+
+button.reject {
+  background: #e53935;
+  color: white;
+}
+
+.big-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.sync-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Queue */
+.queue {
+  margin-top: 10px;
+  background: #fff3e0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.queue.hidden {
+  display: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #666;
+}
