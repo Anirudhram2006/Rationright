@@ -88,14 +88,8 @@
   <script src="app.js"></script>
     <script>
     function userLogin() {
-      const u = document.getElementById("username").value.trim();
-      const p = document.getElementById("password").value.trim();
-      if (u === "admin" && p === "1234") {
-        document.getElementById("screen-user-login").classList.remove("active");
-        document.getElementById("screen-login").classList.add("active");
-      } else {
-        alert("Invalid username or password");
-      }
+     document.getElementById("screen-user-login").classList.remove("active");
+  document.getElementById("screen-login").classList.add("active");
     }
   </script>
 </body>
