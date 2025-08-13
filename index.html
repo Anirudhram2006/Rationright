@@ -16,8 +16,22 @@
     </header>
 
     <main id="main">
-      <!-- Login Screen -->
-      <section id="screen-login" class="screen active">
+     <!-- Username/Password Login Screen -->
+
+      
+        <section id="screen-user-login" class="screen active">
+        <h2>Login</h2>
+        <div class="card">
+          <label>Username</label>
+          <input type="text" id="username" placeholder="Enter username">
+        </div>
+        <div class="card">
+          <label>Password</label>
+          <input type="password" id="password" placeholder="Enter password">
+        </div>
+        <button class="primary" onclick="userLogin()">Login</button>
+      </section>
+          <section id="screen-login" class="screen">
         <img src="assets/fingerprint.png" class="fingerprint" alt="Fingerprint icon">
         <h2>Scan Fingerprint</h2>
         <p class="muted">(Simulated biometric login for demo)</p>
@@ -72,5 +86,18 @@
   </div>
 
   <script src="app.js"></script>
+    <script>
+    function userLogin() {
+      const u = document.getElementById("username").value.trim();
+      const p = document.getElementById("password").value.trim();
+      if (u === "admin" && p === "1234") {
+        document.getElementById("screen-user-login").classList.remove("active");
+        document.getElementById("screen-login").classList.add("active");
+      } else {
+        alert("Invalid username or password");
+      }
+    }
+  </script>
 </body>
 </html>
+
